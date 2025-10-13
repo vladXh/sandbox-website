@@ -1,7 +1,15 @@
+:root{
+    --main-color: rgb(37, 37, 37);
+    --secondary-color: rgb(50,50,50);
+    --shadow-color: rgb(25,25,25);
+    --font: Arial, Helvetica, sans-serif;
+}
+
 h1{
     color: white;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font);
+    margin: 0;
 }
 
 p{
@@ -10,8 +18,12 @@ p{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+ul{
+    list-style-type: none;
+}
+
 body{
-    background-color: rgb(37, 37, 37);
+    background-color: var(--main-color);
     margin: 40px;
 }
 
@@ -28,7 +40,7 @@ body{
 
 .modernText{
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font);
     text-decoration: none;
     list-style: none;
 }
@@ -37,22 +49,31 @@ body{
     display: flex;
     justify-content: right;
     gap: 50px;
+    padding: 15px;
 }
+
 
 #navBar{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
-    background-color: hsl(0, 0, 15);
+    background-color: var(--secondary-color);
+    border-radius: 1.5rem;
+    padding-left: 24px;
+    padding-right: 69px;
 
+    box-shadow: 0px 5px 10px var(--shadow-color);
 }
 
 #Logo{
-    width: 3rem;
-    height: 3rem;
-    
-    border-radius: 10rem;
+    display: flex;  
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    overflow: hidden;
 }
 
 
@@ -63,11 +84,12 @@ body{
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    background-color: rgb(50,50,50); 
-    background-color: hsl(0, 0, 0);
-    padding-top: 40px;
-    padding-bottom: 40px;
-    gap: 32px
+    background-color: var(--secondary-color); 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 32px;
+
+    box-shadow: 0px 5px 10px var(--shadow-color);
 }
 
 #linkList{
@@ -75,7 +97,7 @@ body{
     justify-content: center;
     text-align: center;
     align-items: center;
-    gap:24px;
+    gap:12px;
 }
 img{
     width:64px;

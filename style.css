@@ -1,9 +1,33 @@
+@font-face {
+    font-family: 'jetbrains-mono';
+    src: url(fonts/JetBrainsMono-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'jetbrains-mono';
+    src: url(fonts/JetBrainsMono-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'jetbrains-mono';
+    src: url(fonts/JetBrainsMono-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'jetbrains-mono';
+    src: url(fonts/JetBrainsMono-Medium.ttf);
+    font-weight: Medium;
+}
+
 :root{
     --main-color: rgb(37, 37, 37);
     --secondary-color: rgb(50,50,50);
     --shadow-color: rgb(25,25,25);
     --hover-color: rgb(255, 255, 255);
-    --font: Arial, Helvetica, sans-serif;
+    --font: jetbrains-mono;
 }
 
 h1{
@@ -21,6 +45,11 @@ p{
 
 ul{
     list-style-type: none;
+}
+
+img{
+    width:64px;
+    height: auto;
 }
 
 body{
@@ -52,6 +81,14 @@ body{
     margin-right: auto;
 }
 
+.shadowEffect{
+    box-shadow: 0px 5px 10px var(--shadow-color);
+}
+
+.shadowText{
+    text-shadow: 0px 4px 5px rgb(200, 200, 200);
+}
+
 #navLinks{
     display: flex;
     gap: 50px;
@@ -67,9 +104,9 @@ body{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    
+
     background-color: var(--secondary-color);
-    border-radius: 1.5rem;
+    border-radius: 12px;
     padding-left: 24px;
     padding-right: 69px;
 
@@ -89,15 +126,16 @@ body{
 
 
 #RandomLinks{
-    border-radius: 25px;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
     background-color: var(--secondary-color); 
-    padding-top: 10px;
-    padding-bottom: 10px;
     gap: 32px;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
 
     box-shadow: 0px 5px 10px var(--shadow-color);
 }
@@ -109,17 +147,13 @@ body{
     align-items: center;
     gap:12px;
 }
-img{
-    width:64px;
-    height: auto;
-}
 
 #imagesDiv{
     display: flex;
     justify-content: center;
     gap: 12px;
     padding-top: 6px;
-    padding-bottom: 24px;
+    padding-bottom: 12px;
 }
 
 #imagesImage{
@@ -127,9 +161,10 @@ img{
     width: 100%;
     object-fit: cover;
 
-    border-radius: 36px;
+    border-radius: 12px;
     overflow: hidden;
     box-shadow: 0px 5px 10px var(--shadow-color);
+    
 }
 
 #buttonsDiv{
@@ -137,7 +172,7 @@ img{
     justify-content: center;
     gap: 6px;
 
-    padding-top: 24px;
+    padding-top: 12px;
 }
 
 #buttonsImage{
@@ -145,16 +180,24 @@ img{
     width: 100%;
     object-fit: cover;
 
-    border-radius: 36px;
+    border-radius: 12px;
     overflow: hidden;
     box-shadow: 0px 5px 10px var(--shadow-color);
 
     transform: scale(0.99);
 
     transition: box-shadow 0.4s ease, transform 0.3s ease;
+
 }
 
 #buttonsImage:hover{
     box-shadow: 0px 0px 5px var(--hover-color);
     transform: scale(1.01);
+}
+
+#buttonText{
+    color: var(--secondary-color);
+    font-size: 48px;
+
+    text-shadow: 0px 0px 6px rgb(0,0,0);
 }

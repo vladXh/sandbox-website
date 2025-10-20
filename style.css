@@ -54,7 +54,8 @@ img{
 
 body{
     background-color: var(--main-color);
-    margin: 40px;
+    margin: 200px;
+    margin-top: 24px;
 }
 
 .removePadding{
@@ -75,10 +76,8 @@ body{
     list-style: none;
 }
 
-.sizeDiv{
-    width: 76%;
-    margin-left: auto;
-    margin-right: auto;
+.scaleText{
+    font-size: 3.5vw;
 }
 
 .shadowEffect{
@@ -101,16 +100,14 @@ body{
     justify-content: space-between;
     align-items: center;
 
-    width: 70%;
     margin-left: auto;
     margin-right: auto;
 
     background-color: var(--secondary-color);
     border-radius: 12px;
-    padding-left: 24px;
-    padding-right: 69px;
 
     box-shadow: 0px 5px 10px var(--shadow-color);
+    padding-left: 10px;
 }
 
 #Logo{
@@ -121,6 +118,7 @@ body{
     height: 45px;
     border-radius: 50px;
     overflow: hidden;
+    
 }
 
 
@@ -170,13 +168,11 @@ body{
 #buttonsDiv{
     display: flex;
     justify-content: center;
-    gap: 6px;
 
     padding-top: 12px;
 }
 
 #buttonsImage{
-    height: 300px;
     width: 100%;
     object-fit: cover;
 
@@ -192,12 +188,142 @@ body{
 
 #buttonsImage:hover{
     box-shadow: 0px 0px 5px var(--hover-color);
-    transform: scale(1.01);
 }
 
 #buttonText{
     color: var(--secondary-color);
-    font-size: 48px;
+    font-size: 3vw;
 
     text-shadow: 0px 0px 6px rgb(0,0,0);
+}
+
+#buttonsDiv1{
+width: 70%;
+}
+
+#buttonsDiv2{
+width: 100%;
+}
+
+#buttonsDiv3{
+display: flex;
+height: 45%;
+width: 100%;
+}
+
+#buttonsGroup{
+    width: 50%;
+}
+
+#buttonsText1{
+    position: absolute; 
+    top: -3vw; 
+    left: 1vw;
+}
+
+#buttonsText2{
+    position: absolute; 
+    bottom: 1.2vw; 
+    left: 1vw;
+}
+
+#buttonsText3{
+    position: absolute; 
+    bottom: 0.5vw; 
+    left: 1vw;
+}
+
+#buttonsText4{
+    position: absolute; 
+    top: 1vw;
+}
+
+@media screen and (max-width: 1280px){
+    body{
+        margin: 160px;
+        margin-top: 24px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+    body{
+        margin: 140px;
+        margin-top: 24px;
+    }
+    
+    #imagesDiv{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    body{
+        margin: 100px;
+        margin-top: 24px;
+    }
+
+    #buttonsDiv{
+        display: grid;
+        grid-template-columns: repeat(2, 1);
+    }
+
+    
+    #buttonsDiv1{
+    width: 100%;
+    }
+
+    #buttonsDiv2{
+    width: 100%;
+    }
+
+    #buttonsDiv3{
+    display: flex;
+    width: 100%;
+    }
+
+    #buttonsGroup{
+        width: 100%;
+        height: 105%;
+    }
+
+    #buttonText{
+        font-size: 6vw;
+    }
+
+    #buttonsText1{
+    position: absolute; 
+    top: -6vw; 
+    left: 1vw;
+    }
+
+    #buttonsText4{
+        position: absolute; 
+        top: 1vw; 
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    #imagesDiv{
+        display: flex;
+        flex-direction: column;
+
+        height: auto;
+    }
+
+    #linkList{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #buttonsText4{
+        position: absolute; 
+        top: 2vw; 
+    }
 }

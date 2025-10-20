@@ -23,20 +23,20 @@
 
 
         <div>
-        <h1 style="padding-top: 6px;">Welcome to my sandbox website</h1>
+        <h1 style="padding-top: 6px;" class="scaleText">Welcome to my sandbox website</h1>
         <!-- <p>Here I will be experimenting with different things</p> -->
         </div>
 
         
-        <div id="imagesDiv" class="sizeDiv">
+        <div id="imagesDiv">
             <img src="images/image_1.png" alt="" id="imagesImage">
             <img src="images/1.jpg" alt="" id="imagesImage">
             <img src="images/2.jpg" alt="" id="imagesImage">
             <img src="images/3.jpg" alt="" id="imagesImage">
         </div>
 
-        <div id="RandomLinks" class="sizeDiv">
-            <h1>Links to random Sites</h1>
+        <div id="RandomLinks">
+            <h1 class="scaleText">Links to random Sites</h1>
 
             <div id="linkList">
                 <a href="https://www.google.com/">
@@ -60,40 +60,44 @@
             </div>
         </div>
         
-        <div id="buttonsDiv" class="sizeDiv">
-            <div>
-                <div>
+        <div id="buttonsDiv">
+            <div id="buttonsGroup">
+                <div id="buttonsDiv3">
                     <a href="#" style="position: relative;">
-                        <img src="images/btn1.jpg" alt="" id="buttonsImage" style="width: 150px;">
+                        <img src="images/btn1.jpg" alt="" id="buttonsImage" style="height: 99.5%; transform: scale(0.98);">
                         
-                        <div style="position: absolute; bottom: 24px; left: 2px;">
+                        <div id="buttonsText4">
                             <h1 id="buttonText" style="color: white; writing-mode: vertical-rl;">hobbies</h1>
                         </div>
                     </a>
                     
                     <a href="#" style="position: relative">
-                        <img src="images/btn3.jpg" alt="" id="buttonsImage" style="width: 300px;">
+                        <img src="images/btn3.jpg" alt="" id="buttonsImage" style="height: 99.5%; transform: scale(0.98);">
                         
-                        <div style="position: absolute; bottom: 12px; right: 24px;">
+                        <div id="buttonsText3">
                             <h1 id="buttonText" style="color: white;">About</h1>
                         </div>
                     </a>
                 </div>
+                <div id="buttonsDiv2">
+                    <a href="#" style="position: relative;">
+                        <img src="images/btn2.jpg" alt="" id="buttonsImage">
+                        
+                        <div id="buttonsText2">
+                            <h1 id="buttonText" style="color: white;">My journey</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="buttonsDiv1">
                 <a href="#" style="position: relative;">
-                    <img src="images/btn2.jpg" alt="" id="buttonsImage" width="100px">
+                    <img src="images/btn4.jpg" alt="" id="buttonsImage">
                     
-                    <div style="position: absolute; bottom: 12px; left: 24px;">
-                        <h1 id="buttonText" style="color: white;">My journey</h1>
+                    <div id="buttonsText1">
+                        <h1 id="buttonText" style="text-shadow: 0px 0px 0px rgb(0,0,0);">experience</h1>  
                     </div>
                 </a>
             </div>
-            <a href="#" style="position: relative;">
-                <img src="images/btn4.jpg" alt="" id="buttonsImage" style="width: 630px; height: 600px;">
-                
-                <div style="position: absolute; top: 12px; left: 24px;">
-                    <h1 id="buttonText" style="text-shadow: 0px 0px 0px rgb(0,0,0);">experience</h1>  
-                </div>
-            </a>
         </div>
     </body>
 </html>

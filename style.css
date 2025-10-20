@@ -265,6 +265,15 @@ width: 100%;
         margin-top: 24px;
     }
 
+    #imagesDiv{
+        display: flex;
+        flex-direction: column;
+    }
+    #imagesImage{
+        height: 100%;
+    }
+
+
     #buttonsDiv{
         display: grid;
         grid-template-columns: repeat(2, 1);
@@ -302,28 +311,5 @@ width: 100%;
     #buttonsText4{
         position: absolute; 
         top: 1vw; 
-    }
-}
-
-
-@media screen and (max-width: 640px) {
-    #imagesDiv{
-        display: flex;
-        flex-direction: column;
-
-        height: auto;
-    }
-
-    #linkList{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 20%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #buttonsText4{
-        position: absolute; 
-        top: 2vw; 
     }
 }

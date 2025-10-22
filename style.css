@@ -6,18 +6,6 @@
 
 @font-face {
     font-family: 'jetbrains-mono';
-    src: url(fonts/JetBrainsMono-Bold.ttf);
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'jetbrains-mono';
-    src: url(fonts/JetBrainsMono-ExtraBold.ttf);
-    font-weight: 800;
-}
-
-@font-face {
-    font-family: 'jetbrains-mono';
     src: url(fonts/JetBrainsMono-Medium.ttf);
     font-weight: Medium;
 }
@@ -63,12 +51,6 @@ body{
     margin: 0;
 }
 
-.CenterDiv{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-
 .modernText{
     color: white;
     font-family: var(--font);
@@ -91,9 +73,10 @@ body{
 #navLinks{
     display: flex;
     gap: 50px;
-    padding: 15px;
-}
+    padding-right: 96px;
 
+    font-size: 24px;
+}
 
 #navBar{
     display: flex;
@@ -110,6 +93,23 @@ body{
     padding-left: 10px;
 }
 
+#mobileNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+
+    box-shadow: 0px 5px 10px var(--shadow-color);
+    
+    height: 65px;
+
+    display: none;
+}
+
 #Logo{
     display: flex;  
     justify-content: center;
@@ -120,8 +120,6 @@ body{
     overflow: hidden;
     
 }
-
-
 
 #RandomLinks{
     border-radius: 12px;
@@ -140,16 +138,30 @@ body{
 
 #linkList{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     align-items: center;
     gap:12px;
 }
 
+#randomLink{
+    height: 100%;
+    width: 76px;
+}
+
+#welcomeText{
+    font-size: 28px;
+}
+
+#randomLinkText{
+    font-size: 28px;
+}
+
 #imagesDiv{
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 4px;
     padding-top: 6px;
     padding-bottom: 12px;
 }
@@ -170,6 +182,8 @@ body{
     justify-content: center;
 
     padding-top: 12px;
+    padding-bottom: 8px;
+    height: 95%;
 }
 
 #buttonsImage{
@@ -198,7 +212,8 @@ body{
 }
 
 #buttonsDiv1{
-width: 70%;
+width: 72%;
+height: 95%;
 }
 
 #buttonsDiv2{
@@ -208,11 +223,11 @@ width: 100%;
 #buttonsDiv3{
 display: flex;
 height: 45%;
-width: 100%;
 }
 
 #buttonsGroup{
     width: 50%;
+    height: 95%;
 }
 
 #buttonsText1{
@@ -238,11 +253,74 @@ width: 100%;
     top: 1vw;
 }
 
+#aboutDiv{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+}
+
+#aboutHeader{
+    display: flex;
+    padding: 12px;
+    font-size: 3vw;
+}
+
+#aboutTextImage{
+    display: flex;
+    padding-top: 12px;
+}
+
+#aboutImages{
+    height: 350px;
+    width: auto;
+    min-width: 24vw;
+
+    object-fit: cover;
+    overflow: hidden;
+    
+
+    border-radius: 12px;
+    margin: 24px;
+    margin-top: 0;
+}
+
+#aboutText{
+    text-align: right;
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+#aboutTextDiv{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    justify-content: center;
+    align-items: right;
+}
+
+#aboutImagesTextDiv{
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+#aboutTextImages{
+    height: 21vw;
+    width: auto;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+
 @media screen and (max-width: 1280px){
     body{
         margin: 160px;
         margin-top: 24px;
     }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -263,6 +341,20 @@ width: 100%;
     body{
         margin: 50px;
         margin-top: 24px;
+    }
+
+    #navBar{
+        display: none;
+    }
+
+    #mobileNav{
+        display: flex;
+    }
+
+    #navLinks{
+        gap: 26px;
+        padding: 0;
+        font-size: 4vw;
     }
 
     #imagesDiv{

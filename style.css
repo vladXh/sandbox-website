@@ -18,6 +18,10 @@
     --font: jetbrains-mono;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1{
     color: white;
     text-align: center;
@@ -334,19 +338,15 @@ height: 45%;
     margin-bottom: 6px;
 }
 
+#aboutDivTablet{
+    display: none;
+}
+
 @media screen and (max-width: 1280px){
     body{
         margin: 160px;
         margin-top: 24px;
     }
-
-    #aboutDiv{
-        display: flex;
-    }
-    #aboutDivTablet{
-        display: none;
-    }
-
 }
 
 @media screen and (max-width: 1024px) {

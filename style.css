@@ -289,6 +289,17 @@ height: 45%;
     font-size: 1.3vw;
 }
 
+#aboutText2{
+    text-align: left;
+    height: auto;
+    width: 80%;
+
+    margin: 0;
+    margin-right: 6px;
+
+    font-size: 1.8vw;
+}
+
 #aboutTextDiv{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -316,11 +327,24 @@ height: 45%;
     object-fit: cover;
 }
 
+#aboutContainer2{
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
 
 @media screen and (max-width: 1280px){
     body{
         margin: 160px;
         margin-top: 24px;
+    }
+
+    #aboutDiv{
+        display: flex;
+    }
+    #aboutDivTablet{
+        display: none;
     }
 
 }
@@ -335,6 +359,22 @@ height: 45%;
     #imagesDiv{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    #aboutDiv{
+        display: none;
+    }
+    
+    #aboutDivTablet{
+        display: flex;
+    }
+
+    #aboutText{
+        font-size: 1.8vw;
+    }
+
+    #aboutImagesTextDiv{
+        height: 32vw;
     }
 
 }
@@ -405,5 +445,13 @@ height: 45%;
     #buttonsText4{
         position: absolute; 
         top: 1vw; 
+    }
+
+    #aboutText{
+        font-size: 2.3vw;
+    }
+
+    #aboutText2{
+        font-size: 2.3vw;
     }
 }
